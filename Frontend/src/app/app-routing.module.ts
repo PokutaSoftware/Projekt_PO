@@ -14,9 +14,8 @@ import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'parts', component: PartsComponent, children: [
-      { path: 'add', component: AddPartComponent }
-    ] },
+  { path: 'parts', component: PartsComponent},
+  { path: 'parts/add', component: AddPartComponent },
   { path: 'repair', component: RepairComponent, children: [
       { path: ':id', component: RepairStatusComponent }
     ] },
