@@ -1,1 +1,27 @@
-<p>client works!</p>
+<div class="container">
+  <div class="row">
+    <h1 class="display-4">Lista klientów:</h1>
+  </div>
+  <div class="table">
+    <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Imię i nazwisko</th>
+      <th scope="col">Data rejestracji</th>
+      <th scope="col">Telefon</th>
+      <th scope="col">Email</th>
+      <th scope="col">Login</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let client of clients">
+    <tr>
+      <th scope="row">{{ client.id }}</th>
+      <td>{{ client.name }} {{ client.surname}}</td>
+      <td>{{ client.registerDate }}</td>
+      <td>{{ client.phone }}</td>
+      <td>{{ client.email }}</td>
+      <td>{{ client.login }}</td>
+    </tr>
+    </tbody>
+  </div>
+</div>

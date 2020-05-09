@@ -16,7 +16,8 @@
       <td>{{ part.priceWholesale }}</td>
       <td>{{ part.priceRetail }}</td>
       <td>{{ part.date }}</td>
-      <td><button class="btn btn-default">Edytuj</button></td>
+      <td><button class="btn btn-default" (click)="onEdit()">Edytuj</button></td>
+      <td><button class="btn btn-danger"><!--(click)="onDelete()"-->Usuń</button></td>
     </tr>
   </tbody>
 </div>

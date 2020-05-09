@@ -15,16 +15,14 @@ import { HomepageComponent } from './homepage/homepage.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'parts', component: PartsComponent, children: [
-      { path: 'add', component: AddPartComponent }
-    ] },
+  { path: 'parts', component: PartsComponent},
+  { path: 'parts/add', component: AddPartComponent },
   { path: 'repair', component: RepairComponent, children: [
       { path: ':id', component: RepairStatusComponent }
     ] },
   { path: 'client', component: ClientComponent },
-  { path: 'services', component: RservicesComponent, children: [
-      {path: 'add', component: AddRserviceComponent }
-    ] },
+  { path: 'services', component: RservicesComponent },
+  { path: 'services/add', component: AddRserviceComponent },
   { path: 'login', component: LoginComponent},
   {path: 'homepage', component:HomepageComponent},
   { path: '404', component: PageNotFoundComponent },
