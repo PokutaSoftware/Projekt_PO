@@ -5,12 +5,28 @@ import { AppComponent } from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { PartsComponent } from './parts/parts.component';
+import { RepairComponent } from './repair/repair.component';
+import { RservicesComponent } from './rservices/rservices.component';
+import { AddPartComponent } from './parts/add-part/add-part.component';
+import { RepairStatusComponent } from './repair/repair-status/repair-status.component';
+import { ClientComponent } from './client/client.component';
+import { AddRserviceComponent } from './rservices/add-rservice/add-rservice.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PartsComponent,
+    RepairComponent,
+    RservicesComponent,
+    AddPartComponent,
+    RepairStatusComponent,
+    ClientComponent,
+    AddRserviceComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
