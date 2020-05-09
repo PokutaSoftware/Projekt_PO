@@ -11,6 +11,7 @@ import {AddRserviceComponent} from './rservices/add-rservice/add-rservice.compon
 import {HomeComponent} from './home/home.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import { LoginComponent } from './login/login.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -25,6 +26,7 @@ const appRoutes: Routes = [
       {path: 'add', component: AddRserviceComponent }
     ] },
   { path: 'login', component: LoginComponent},
+  {path: 'homepage', component:HomepageComponent},
   { path: '404', component: PageNotFoundComponent },
   { path: '**', redirectTo: '/404' }
   ];
