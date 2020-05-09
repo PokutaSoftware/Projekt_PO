@@ -10,6 +10,7 @@ import {RservicesComponent} from './rservices/rservices.component';
 import {AddRserviceComponent} from './rservices/add-rservice/add-rservice.component';
 import {HomeComponent} from './home/home.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
   { path: 'services', component: RservicesComponent, children: [
       {path: 'add', component: AddRserviceComponent }
     ] },
+  { path: 'login', component: LoginComponent},
   { path: '404', component: PageNotFoundComponent },
   { path: '**', redirectTo: '/404' }
   ];
