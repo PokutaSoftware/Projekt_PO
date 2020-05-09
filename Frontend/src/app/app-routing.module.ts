@@ -20,9 +20,8 @@ const appRoutes: Routes = [
       { path: ':id', component: RepairStatusComponent }
     ] },
   { path: 'client', component: ClientComponent },
-  { path: 'services', component: RservicesComponent, children: [
-      {path: 'add', component: AddRserviceComponent }
-    ] },
+  { path: 'services', component: RservicesComponent },
+  { path: 'services/add', component: AddRserviceComponent },
   { path: 'login', component: LoginComponent},
   { path: '404', component: PageNotFoundComponent },
   { path: '**', redirectTo: '/404' }

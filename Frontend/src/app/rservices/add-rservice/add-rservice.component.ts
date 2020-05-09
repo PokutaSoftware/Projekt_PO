@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-add-rservice',
-  templateUrl: './add-rservice.component.html',
-  styleUrls: ['./add-rservice.component.css']
+  templateUrl: './add-rservice.component.html'
 })
 export class AddRserviceComponent implements OnInit {
 
