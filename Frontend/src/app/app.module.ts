@@ -13,6 +13,7 @@ import { RepairStatusComponent } from './repair/repair-status/repair-status.comp
 import { ClientComponent } from './client/client.component';
 import { AddRserviceComponent } from './rservices/add-rservice/add-rservice.component';
 import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HomeComponent } from './home/home.component';
     RepairStatusComponent,
     ClientComponent,
     AddRserviceComponent,
-    HomeComponent
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

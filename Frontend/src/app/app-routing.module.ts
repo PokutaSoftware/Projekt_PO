@@ -9,6 +9,7 @@ import {ClientComponent} from './client/client.component';
 import {RservicesComponent} from './rservices/rservices.component';
 import {AddRserviceComponent} from './rservices/add-rservice/add-rservice.component';
 import {HomeComponent} from './home/home.component';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,10 +19,12 @@ const appRoutes: Routes = [
   { path: 'repair', component: RepairComponent, children: [
       { path: ':id', component: RepairStatusComponent }
     ] },
-  { path: 'client', component: ClientComponent},
+  { path: 'client', component: ClientComponent },
   { path: 'services', component: RservicesComponent, children: [
-      {path: 'add', component: AddRserviceComponent}
-    ] }
+      {path: 'add', component: AddRserviceComponent }
+    ] },
+  { path: '404', component: PageNotFoundComponent },
+  { path: '**', redirectTo: '/404' }
   ];
 
 @NgModule({
