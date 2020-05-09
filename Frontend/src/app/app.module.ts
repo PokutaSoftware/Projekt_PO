@@ -17,6 +17,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { PartListComponent } from './parts/part-list/part-list.component';
 import { LoginComponent } from './login/login.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { AddingEmployeeComponent } from './adding-employee/adding-employee.component';
+import { AddingClientComponent } from './adding-client/adding-client.component';
+import { EmployeesListComponent } from './employees-list/employees-list.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { HomepageComponent } from './homepage/homepage.component';
     PageNotFoundComponent,
     PartListComponent,
     LoginComponent,
-    HomepageComponent
+    HomepageComponent,
+    AddingEmployeeComponent,
+    AddingClientComponent,
+    EmployeesListComponent
   ],
   imports: [
     BrowserModule,

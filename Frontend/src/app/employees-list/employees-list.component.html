@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+      <h1 class="display-4">Lista pracowników:</h1>
+    </div>
+    <div class="table">
+      <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Imię i nazwisko</th>
+        <th scope="col">Data dołączenia</th>
+        <th scope="col">Telefon</th>
+        <th scope="col">Email</th>
+        <th scope="col">Dział</th>
+      </tr>
+      </thead>
+      <tbody *ngFor="let employee of employees">
+      <tr>
+        <th scope="row">{{ employee.id }}</th>
+        <td>{{ employee.name }} {{ employee.surname}}</td>
+        <td>{{ employee.registerDate }}</td>
+        <td>{{ employee.phone }}</td>
+        <td>{{ employee.email }}</td>
+        <td>{{ employee.department }}</td>
+      </tr>
+      </tbody>
+    </div>
+  </div>
+  

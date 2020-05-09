@@ -12,6 +12,9 @@ import {HomeComponent} from './home/home.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import { LoginComponent } from './login/login.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { AddingEmployeeComponent } from './adding-employee/adding-employee.component';
+import { EmployeesListComponent } from './employees-list/employees-list.component';
+import { AddingClientComponent } from './adding-client/adding-client.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,6 +29,11 @@ const appRoutes: Routes = [
   { path: 'login', component: LoginComponent},
   {path: 'homepage', component:HomepageComponent},
   { path: '404', component: PageNotFoundComponent },
+  {path:'adding_employee', component:AddingEmployeeComponent},
+  {path:'adding_client', component:AddingClientComponent},
+  {path:'employees_list', component:EmployeesListComponent},
+
+
   { path: '**', redirectTo: '/404' }
   ];
 
