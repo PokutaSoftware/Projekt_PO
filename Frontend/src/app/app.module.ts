@@ -14,6 +14,7 @@ import { ClientComponent } from './client/client.component';
 import { AddRserviceComponent } from './rservices/add-rservice/add-rservice.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PartListComponent } from './parts/part-list/part-list.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ClientComponent,
     AddRserviceComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    PartListComponent
   ],
   imports: [
     BrowserModule,
