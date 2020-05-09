@@ -4,6 +4,8 @@ import {AppComponent} from './app.component';
 import {PartsComponent} from './parts/parts.component';
 import {AddPartComponent} from './parts/add-part/add-part.component';
 import {RepairComponent} from './repair/repair.component';
+import {EditRepairComponent} from './repair/edit-repair/edit-repair.component';
+import {AddRepairComponent} from './repair/add-repair/add-repair.component';
 import {RepairStatusComponent} from './repair/repair-status/repair-status.component';
 import {ClientComponent} from './client/client.component';
 import {RservicesComponent} from './rservices/rservices.component';
@@ -20,6 +22,8 @@ const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'parts', component: PartsComponent},
   { path: 'parts/add', component: AddPartComponent },
+  { path: 'repair/edit', component: EditRepairComponent},
+  { path: 'repair/add', component: AddRepairComponent },
   { path: 'repair', component: RepairComponent, children: [
       { path: ':id', component: RepairStatusComponent }
     ] },

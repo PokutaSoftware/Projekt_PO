@@ -20,6 +20,9 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { AddingEmployeeComponent } from './adding-employee/adding-employee.component';
 import { AddingClientComponent } from './adding-client/adding-client.component';
 import { EmployeesListComponent } from './employees-list/employees-list.component';
+import { AddRepairComponent } from './repair/add-repair/add-repair.component';
+import { EditRepairComponent } from './repair/edit-repair/edit-repair.component';
+import { RepairListComponent } from './repair/repair-list/repair-list.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { EmployeesListComponent } from './employees-list/employees-list.componen
     HomepageComponent,
     AddingEmployeeComponent,
     AddingClientComponent,
-    EmployeesListComponent
+    EmployeesListComponent,
+    AddRepairComponent,
+    EditRepairComponent,
+    RepairListComponent
   ],
   imports: [
     BrowserModule,
