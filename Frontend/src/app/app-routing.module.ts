@@ -7,6 +7,7 @@ import {RepairComponent} from './repair/repair.component';
 import {EditRepairComponent} from './repair/edit-repair/edit-repair.component';
 import {AddRepairComponent} from './repair/add-repair/add-repair.component';
 import {RepairStatusComponent} from './repair/repair-status/repair-status.component';
+import {RepairStatusEmployeeComponent} from './repair/repair-status-employee/repair-status-employee.component';
 import {ClientComponent} from './client/client.component';
 import {RservicesComponent} from './rservices/rservices.component';
 import {AddRserviceComponent} from './rservices/add-rservice/add-rservice.component';
@@ -24,6 +25,8 @@ const appRoutes: Routes = [
   { path: 'parts/add', component: AddPartComponent },
   { path: 'repair/edit', component: EditRepairComponent},
   { path: 'repair/add', component: AddRepairComponent },
+  { path: 'repair/repair-status', component: RepairStatusComponent },
+  { path: 'repair/repair-status-employee', component: RepairStatusEmployeeComponent },
   { path: 'repair', component: RepairComponent, children: [
       { path: ':id', component: RepairStatusComponent }
     ] },

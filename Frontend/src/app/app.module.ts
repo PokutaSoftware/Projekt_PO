@@ -24,6 +24,7 @@ import { AddRepairComponent } from './repair/add-repair/add-repair.component';
 import { EditRepairComponent } from './repair/edit-repair/edit-repair.component';
 import { RepairListComponent } from './repair/repair-list/repair-list.component';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { RepairStatusEmployeeComponent } from './repair/repair-status-employee/repair-status-employee.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { DropdownDirective } from './shared/dropdown.directive';
     AddRepairComponent,
     EditRepairComponent,
     RepairListComponent,
-    DropdownDirective
+    DropdownDirective,
+    RepairStatusEmployeeComponent
   ],
   imports: [
     BrowserModule,
