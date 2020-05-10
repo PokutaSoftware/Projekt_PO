@@ -9,14 +9,16 @@
       <li><a href="#">Strona Główna</a></li>
       <li><a href="/services">Cennik</a></li>
       <li><a href="#">Twoja naprawa</a></li>
-      <li><a href="/repair">Wyświetl wszystkie naprawy</a></li>
-      <li><a href="/repair/add">Dodaj nową naprawę</a></li>
     </ul>
 
     <div class="navbar-right">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" role="button">Strefa Pracownika <span class="caret"></span></a>
+        <li class="dropdown"appDropdown>
+          <a class="dropdown-toggle" role="button">Strefa Pracownika <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/repair">Wyświetl wszystkie naprawy</a></li>
+            <li><a href="/repair/add">Dodaj nową naprawę</a></li>
+          </ul>
         </li>
         <li>
           <a href="#" role="button">Wyloguj się</a>

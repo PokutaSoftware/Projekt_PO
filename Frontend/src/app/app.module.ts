@@ -23,6 +23,7 @@ import { EmployeesListComponent } from './employees-list/employees-list.componen
 import { AddRepairComponent } from './repair/add-repair/add-repair.component';
 import { EditRepairComponent } from './repair/edit-repair/edit-repair.component';
 import { RepairListComponent } from './repair/repair-list/repair-list.component';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { RepairListComponent } from './repair/repair-list/repair-list.component'
     EmployeesListComponent,
     AddRepairComponent,
     EditRepairComponent,
-    RepairListComponent
+    RepairListComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
