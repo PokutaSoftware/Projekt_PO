@@ -11,5 +11,5 @@ Projekt na przedmiot , projekt zespołowy systemu informatycznego
    Należy pamiętać aby być w głównym folderze - Frontend.
 5. Następnie wpisujemy: `ngm install`.
 6. Aby odpalić projekt wpisujemy: `ng serve --open`.
-   Projekt automatycznie odpali wam się w przegladarce.
+   Projekt automatycznie odpali wam się w przegladarce pod adresem `http://localhost:4200/`.
 7. Aby wyłączyć projekt w konsoli klikamy `CTRL+C`.
