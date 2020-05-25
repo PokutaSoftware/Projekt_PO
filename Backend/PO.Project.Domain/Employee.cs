@@ -12,7 +12,7 @@ namespace PO.Project.Domain
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
 
-        public int IdRepair { get; set; }
-        public Repair Repair { get; set; }
+        public int RepairId { get; set; }
+        public virtual Repair Repair { get; set; }
     }
 }
