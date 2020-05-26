@@ -56,6 +56,15 @@ namespace PO.Project.Api
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "PO-Project - Pokuta Software WebApi");
             });
+
+            using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            {
+                var context = serviceScope.ServiceProvider.GetRequiredService<ProjectDbContext>();
+                context.Database.EnsureDeleted();
+                context.Database.EnsureCreated();
+            }
+
+
             app.UseHttpsRedirection();
             app.UseMvc();
         }
