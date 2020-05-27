@@ -12,7 +12,6 @@ namespace PO.Project.Domain
         public double WholesalePrice { get; set; }
         public DateTime DateOfStoring { get; set; }
 
-        public int RepairId { get; set; }
-        public virtual Repair Repair { get; set; }
+        public virtual List<CarPartsUsed> CarPartsUsed { get; set; } = new List<CarPartsUsed>();
     }
 }
