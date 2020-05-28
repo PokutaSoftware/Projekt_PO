@@ -11,7 +11,6 @@ namespace PO.Project.Domain
         public double Price { get; set; }
         public string ApproxTime { get; set; }
 
-        public int RepairId { get; set; }
-        public virtual Repair Repair { get; set; }
+        public virtual List<ServicesUsed> ServicesUsed { get; set; } = new List<ServicesUsed>();
     }
 }

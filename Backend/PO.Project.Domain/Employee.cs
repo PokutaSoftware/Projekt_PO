@@ -12,7 +12,6 @@ namespace PO.Project.Domain
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
 
-        public int RepairId { get; set; }
-        public virtual Repair Repair { get; set; }
+        public virtual List<EmployeeToRepairXref> EmployeeToRepair { get; set; } = new List<EmployeeToRepairXref>();
     }
 }
