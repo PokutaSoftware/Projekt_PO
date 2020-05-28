@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using PO.Project.Infrastructure.Persistence;
+using PO.Project.Infrastructure.Migrations;
 
 namespace PO.Project.Api
 {
@@ -30,6 +31,8 @@ namespace PO.Project.Api
         {
             services.AddDbContext<ProjectDbContext>(options => options
                 .UseSqlServer(Configuration.GetConnectionString("DBConnection")));
+
+            services.AddTransient<DbSeed>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddSwaggerGen(c =>
@@ -60,8 +63,10 @@ namespace PO.Project.Api
             using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetRequiredService<ProjectDbContext>();
+                var dbSeed = serviceScope.ServiceProvider.GetRequiredService<DbSeed>();
                 context.Database.EnsureDeleted();
                 context.Database.EnsureCreated();
+                dbSeed.Seed();
             }
 
 
