@@ -9,7 +9,6 @@ namespace PO.Project.Domain
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
 
-        public int RepairId { get; set; }
-        public virtual Repair Repair { get; set; }
+        public virtual List<ClientToRepairXref> ClientToRepair { get; set; } = new List<ClientToRepairXref>();
     }
 }
